@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ar.android.prueba.pasut.org.myapplication" >
+    <!-- Minimum permissions for Beyondar -->
+    <uses-permission android:name="android.permission.CAMERA" />
 
+    <!-- For Beyondar this is not mandatory unless you want to load something from Internet (for instance images) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--  BeyondAR needs the following features-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+    <uses-feature android:name="android.hardware.sensor.compass" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
